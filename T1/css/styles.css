@@ -176,11 +176,117 @@ footer p{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
 }
 
+
+#contact{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-contact{
+    width: 400px;
+    height: 400px;
+}
+
+.vertical-line{
+    height: 45vh;
+    width: 2px;
+    background-color: black;
+    opacity: 30%;
+}
+
+.contact-methods-container{
+    display: flex;
+    gap: 5px;
+}
+
+.contact-methods{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 30px;
+}
+
+.contact-methods p{
+    font-size: large;
+}
+
+.contact-methods-container a{
+    transition: 0.3s;
+}
+
+.contact-methods-container a:hover{
+    color: rgb(58, 137, 190);
+}
+
+
 /* responsividade */
+
+
+@media (max-width: 1024px){
+
+    #intro{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #projects{
+        margin-top: 50px;
+    }
+    
+    .project-list{
+        margin-top: 50px;
+    }
+
+    #sidebar{
+        height: 100%;
+    }
+
+    #contact{
+        margin-top: 50px;
+    }
+
+    .image-contact{
+        width: 300px;
+        height: 300px;
+    }
+
+    .contact-methods{
+        width: 300px;
+        height: 300px;
+    }
+
+
+    #pictures{
+        margin-bottom: 50px;
+    }
+
+}
 
 @media (max-width: 768px) {
     #pictures {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-contact{
+        width: 250px;
+        height: 250px;
+    }
+
+    #contact{
+        margin-top: 80px;
+    }
+
+    .contact-methods{
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact-methods p {
+        font-size: 13px;
     }
 }
 
@@ -233,4 +339,20 @@ footer p{
         width: 150px;
         height: 150px;
     }
+
+    .image-contact{
+        display: none
+    }
+
+    .vertical-line{
+        display: none;
+    }
+
+    .contact-methods{
+        padding: 0;
+    }
+
+
+
+
 }
