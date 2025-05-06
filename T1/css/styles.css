@@ -43,7 +43,7 @@ h1{
 }
 
 .nav-item, .navbar-brand {
-    margin: 5px 0; /* Ajusta o espaçamento entre os links */
+    margin: 5px 0;
 }
 
 .navbar-nav .nav-link{
@@ -220,6 +220,50 @@ footer p{
 
 .contact-methods-container a:hover{
     color: rgb(58, 137, 190);
+}
+
+#intro-retas{
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+#canvas-container {
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    display: block;
+    margin: 0 auto;
+}
+
+#inputDefault{
+    width: 10%;
+    display: inline;
+}
+
+#reset-btn{
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    position: absolute;
+}
+
+#lines-number{
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+    position: absolute;
+    border: 2px solid #333;
+    padding: 5px;
+}
+
+.canvas-wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.col-form-label{
+    padding-top: 0;
 }
 
 
