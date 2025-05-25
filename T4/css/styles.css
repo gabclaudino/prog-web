@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#grade {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#grade th,
+#grade td {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.disciplina {
+    cursor: pointer;
+}
+
+/* Cores dos status */
+.aprovado {
+    background-color: lightgreen;
+}
+
+.reprovado {
+    background-color: lightcoral;
+}
+
+.matriculado {
+    background-color: lightblue;
+}
+
+.equivalencia {
+    background-color: khaki;
+}
+
+.nao-cursado {
+    background-color: white;
+}

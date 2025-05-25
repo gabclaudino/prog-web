@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Visualizeitor</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+    <h1>Visualizeitor - Visualizador de Grade Curricular</h1>
+
+    <div style="margin: 20px;">
+        <label for="raInput">RA:</label>
+        <input type="text" id="raInput" placeholder="00000000" maxlength="8" pattern="\d{8}">
+        <button id="buscarRA">Pesquisar</button>
+    </div>
+
+    <table id="grade">
+    <thead>
+        <tr id="header-row"></tr> <!-- Cabeçalhos dos períodos -->
+    </thead>
+    <tbody></tbody> <!-- Disciplinas serão inseridas aqui -->
+    </table>
+</body>
+</html>
